@@ -1,0 +1,20 @@
+BALDÉ ÉLÉGANCE - site vitrine (un seul fichier à modifier : index.html)
+
+OUVRIR LE SITE
+Double-cliquez sur index.html (ou "Open with Live Server" dans VS Code).
+Pour le mettre en ligne : envoyez tout le dossier (index.html, photos, img) chez votre hébergeur.
+
+REMPLACER LES PHOTOS PAR CELLES DE DJENEBA
+1. Mettez les nouvelles photos dans le dossier "photos" (JPG, de préférence 800 px de large, verticales).
+2. Dans index.html, cherchez PRODUITS (vers la ligne 340). Une ligne = un article.
+   Changez le nom, le prix (en chiffres, sans espace), la description et "photo:" (le nom du fichier).
+3. Pour ajouter un article, copiez une ligne et modifiez-la. Pour le retirer, supprimez la ligne.
+4. "dispo:false" affiche l'article comme vendu.
+
+PHOTO DE DJENEBA
+Enregistrez une photo d'elle sous le nom photos/djeneba.jpg : elle s'affiche automatiquement dans "Qui est derrière la boutique".
+
+IMPORTANT
+- Les 14 photos et les prix actuels sont des EXEMPLES de fournisseur. Ne gardez en ligne que ce que Djeneba vend vraiment, avec ses propres photos.
+- Les 5 photos de hijab avec visages très retouchés (beige, bordeaux, brique, mauve, prune) font "faux" : à remplacer en premier.
+- Numéro WhatsApp : cherchez 224626493140 dans index.html si vous devez le changer.

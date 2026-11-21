@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baldé Élégance | Vêtements et hijabs pour femmes à Conakry</title>
+<meta name="description" content="Tuniques, robes longues, foulards, turbans et hijabs à Conakry. Commandez sur WhatsApp ou appelez le 626 49 31 40.">
+<meta name="theme-color" content="#561E2E">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Baldé Élégance | Vêtements et hijabs pour femmes à Conakry">
+<meta property="og:description" content="Tuniques, robes longues, foulards, turbans et hijabs. Commandez sur WhatsApp ou appelez le 626 49 31 40.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/badge-96.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF3E8; --cream-2:#F5E8D8;
+    --burgundy:#561E2E; --plum:#2E0916;
+    --gold:#D4A24C; --gold-dark:#A87C28;
+    --blush:#F2C9BF; --rose:#E8B4A0; --ink:#3A1A24; --white:#FFF;
+    --radius:18px; --shadow:0 10px 30px rgba(86,30,46,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:76px}
+  body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:78px}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .container{width:min(1120px,100% - 32px);margin-inline:auto}
+  h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.1}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+  svg.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  svg.wa-i{width:20px;height:20px;flex:none;fill:currentColor}
+
+  /* Boutons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:11px 24px;border-radius:999px;font:500 .95rem 'Poppins',sans-serif;border:1.5px solid transparent;cursor:pointer;transition:transform .15s,background .2s,color .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-gold{background:var(--gold);color:var(--plum)}
+  .btn-gold:hover{background:var(--gold-dark);color:var(--white)}
+  .btn-wa{background:#1F9D55;color:#fff}
+  .btn-wa:hover{background:#17824A}
+  .btn-line{border-color:var(--gold);color:var(--cream)}
+  .btn-line:hover{background:var(--gold);color:var(--plum)}
+  .btn-burgundy{background:var(--burgundy);color:var(--cream)}
+  .btn-burgundy:hover{background:var(--plum)}
+
+  /* En-tête */
+  header{position:sticky;top:0;z-index:50;background:rgba(251,243,232,.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(212,162,76,.4)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:8px 0;gap:12px}
+  .brand{display:flex;align-items:center;gap:11px}
+  .brand img{width:46px;height:46px;border-radius:50%}
+  .brand-text{line-height:1}
+  .brand-text strong{display:block;font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.15em;color:var(--burgundy)}
+  .brand-text span{font-size:.6rem;letter-spacing:.45em;color:var(--gold-dark);text-transform:uppercase;font-weight:500}
+  nav ul{display:none;list-style:none;gap:28px;font-size:.92rem;font-weight:500}
+  nav a:hover{color:var(--gold-dark)}
+  .nav .btn{min-height:44px;padding:8px 18px;font-size:.9rem}
+  @media(min-width:860px){nav ul{display:flex}}
+
+  /* Accueil */
+  .hero{background:radial-gradient(900px 480px at 88% -10%,rgba(232,180,160,.3),transparent 60%),linear-gradient(160deg,var(--plum),var(--burgundy));color:var(--cream);padding:46px 0 64px;overflow:hidden}
+  .hero-grid{display:grid;gap:36px;align-items:center}
+  .eyebrow{font-size:.74rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;font-weight:500}
+  .hero h1{font-size:clamp(2.7rem,9vw,4.9rem);color:var(--cream);letter-spacing:-.01em;line-height:1}
+  .hero h1 em{color:var(--rose);font-style:italic}
+  .hero p.lead{margin:20px 0 28px;max-width:44ch;color:rgba(251,243,232,.86);font-weight:300;font-size:1.04rem}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
+  .hero-phone{margin-top:18px;font-size:.95rem;color:rgba(251,243,232,.78)}
+  .hero-phone a{color:var(--gold);font-weight:600;border-bottom:1px solid rgba(212,162,76,.6)}
+  .hero-photos{position:relative;width:min(340px,86%);aspect-ratio:4/5;margin:6px auto 0}
+  .hero-photos::before{content:"";position:absolute;inset:-14px -14px 28px 22px;border:1.5px solid var(--gold);border-radius:50% 50% 14px 14px / 34% 34% 14px 14px}
+  .hp-main{position:absolute;inset:0 0 0 14%;border-radius:50% 50% 14px 14px / 34% 34% 14px 14px;overflow:hidden;box-shadow:0 22px 50px rgba(0,0,0,.4)}
+  .hp-main img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+  .hp-small{position:absolute;left:-6%;bottom:-6%;width:44%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:4px solid var(--burgundy);box-shadow:0 12px 30px rgba(0,0,0,.4)}
+  .hp-small img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+  @media(min-width:860px){.hero{padding:80px 0 90px}.hero-grid{grid-template-columns:1.1fr .9fr}.hero-photos{width:min(380px,100%);margin-right:0}}
+
+  /* Bande de confiance */
+  .trust{background:var(--cream-2);border-bottom:1px solid rgba(212,162,76,.35)}
+  .trust ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 16px;padding:18px 0}
+  .trust li{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;line-height:1.35;color:var(--burgundy)}
+  .trust svg{color:var(--gold-dark);margin-top:1px}
+  .trust strong{font-weight:600}
+  @media(min-width:860px){.trust ul{grid-template-columns:repeat(4,1fr);gap:24px}}
+
+  section{padding:62px 0}
+  .section-head{text-align:center;margin-bottom:30px}
+  .section-head h2{font-size:clamp(2.1rem,6vw,3rem);color:var(--burgundy)}
+  .section-head p{color:#7a5a60;margin-top:8px;font-weight:300}
+  .divider{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:12px;color:var(--gold)}
+  .divider::before,.divider::after{content:"";width:54px;height:1px;background:var(--gold)}
+
+  /* Catégories avec photos */
+  .cats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media(min-width:860px){.cats{grid-template-columns:repeat(4,1fr);gap:18px}}
+  .cat{position:relative;aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;cursor:pointer;border:0;padding:0;box-shadow:var(--shadow);text-align:left;font:inherit;color:inherit;background:var(--blush)}
+  .cat img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transition:transform .5s}
+  .cat:hover img{transform:scale(1.05)}
+  .cat::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(46,9,22,.82),rgba(46,9,22,0) 55%)}
+  .cat span{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;color:var(--cream);font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600;line-height:1.05}
+
+  /* Collection */
+  .filters{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 12px;margin-bottom:14px;scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+  @media(min-width:860px){.filters{justify-content:center}}
+  .chip{white-space:nowrap;min-height:42px;padding:8px 18px;border-radius:999px;border:1.5px solid var(--gold);background:transparent;color:var(--burgundy);font:500 .88rem 'Poppins',sans-serif;cursor:pointer;transition:.2s}
+  .chip.active,.chip:hover{background:var(--burgundy);color:var(--cream);border-color:var(--burgundy)}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 12px}
+  @media(min-width:860px){.grid{grid-template-columns:repeat(4,1fr);gap:26px 20px}}
+  .card{display:flex;flex-direction:column;background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+  .photo{position:relative;display:block;width:100%;aspect-ratio:3/4;border:0;padding:0;cursor:zoom-in;background:var(--blush);overflow:hidden}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:transform .5s}
+  .card:hover .photo img{transform:scale(1.04)}
+  .info{padding:12px 13px 14px;display:flex;flex-direction:column;gap:3px;flex:1}
+  .info h3{font-size:1.28rem;color:var(--burgundy);line-height:1.12}
+  .price{font-weight:600;color:var(--gold-dark);margin:2px 0 8px;font-size:.98rem}
+  .info .btn{margin-top:auto;min-height:44px;padding:8px 10px;font-size:.84rem;width:100%}
+  .note{text-align:center;color:#8a6a70;font-size:.84rem;margin-top:24px}
+
+  /* Comment commander */
+  .how{background:linear-gradient(160deg,var(--plum),var(--burgundy));color:var(--cream)}
+  .how .section-head h2{color:var(--cream)}
+  .how .section-head p{color:rgba(251,243,232,.75)}
+  .steps{display:grid;gap:16px}
+  @media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr);gap:22px}}
+  .step{border:1px solid rgba(212,162,76,.45);border-radius:var(--radius);padding:24px 22px;background:rgba(251,243,232,.04)}
+  .step .n{font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:var(--gold);line-height:1}
+  .step h3{font-size:1.55rem;margin:6px 0 6px}
+  .step p{font-weight:300;font-size:.93rem;color:rgba(251,243,232,.84)}
+  .pay{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:24px}
+  .pay span{padding:8px 16px;border-radius:999px;background:rgba(212,162,76,.16);border:1px solid rgba(212,162,76,.5);font-size:.84rem}
+
+  /* À propos */
+  .about{display:grid;gap:28px;align-items:center}
+  .about.has-photo{grid-template-columns:1fr}
+  @media(min-width:860px){.about.has-photo{grid-template-columns:.8fr 1.2fr;gap:56px}}
+  .about-photo{display:none;max-width:300px;aspect-ratio:3/4;border-radius:50% 50% 14px 14px / 34% 34% 14px 14px;overflow:hidden;box-shadow:var(--shadow)}
+  .about.has-photo .about-photo{display:block}
+  .about-photo img{width:100%;height:100%;object-fit:cover}
+  .about-text{max-width:60ch}
+  .about h2{font-size:clamp(2.1rem,6vw,3rem);color:var(--burgundy);margin-bottom:12px}
+  .about p{margin-bottom:12px;color:#5b3a44;font-weight:300;font-size:1.04rem}
+  .sign{font-family:'Caveat',cursive;font-size:2.4rem;color:#A24A5C;transform:rotate(-3deg);transform-origin:left;line-height:1;margin-top:14px}
+
+  /* Contact */
+  .contact{background:var(--cream-2)}
+  .contact-box{max-width:620px;margin:0 auto;background:var(--white);border-radius:var(--radius);padding:34px 24px;text-align:center;box-shadow:var(--shadow);border:1px solid rgba(212,162,76,.35)}
+  .contact-box h2{font-size:2.1rem;color:var(--burgundy);margin-bottom:6px}
+  .phone{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;color:var(--burgundy);margin:10px 0 2px;letter-spacing:.02em}
+  .contact-box p{color:#7a5a60;font-weight:300}
+  .contact-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px}
+
+  footer{background:var(--plum);color:rgba(251,243,232,.78);text-align:center;padding:34px 0 40px;font-size:.84rem}
+  footer .brand-line{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:6px}
+  footer .brand-line img{width:44px;height:44px;border-radius:50%}
+  footer strong{font-family:'Cormorant Garamond',serif;font-size:1.6rem;letter-spacing:.12em;color:var(--cream)}
+  footer .gold{color:var(--gold);font-style:italic;margin-bottom:10px;display:block}
+
+  /* Barre fixe appeler + WhatsApp (téléphone) */
+  .bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(251,243,232,.97);border-top:1px solid rgba(212,162,76,.5);box-shadow:0 -8px 24px rgba(46,9,22,.14)}
+  .bar .btn{flex:1;min-height:50px;padding:8px 10px}
+  @media(min-width:860px){
+    body{padding-bottom:0}
+    .bar{left:auto;right:20px;bottom:20px;width:auto;padding:0;background:none;border:0;box-shadow:none;flex-direction:column}
+    .bar .btn{box-shadow:0 8px 22px rgba(0,0,0,.25)}
+    .bar .btn-call{display:none}
+  }
+
+  /* Agrandissement d'une photo */
+  dialog{border:0;padding:0;background:var(--cream);border-radius:var(--radius);width:min(860px,calc(100% - 24px));max-height:calc(100dvh - 24px);overflow:auto;margin:auto}
+  dialog::backdrop{background:rgba(46,9,22,.72)}
+  .lb{display:grid}
+  @media(min-width:720px){.lb{grid-template-columns:1fr 1fr}}
+  .lb-img{background:var(--blush);max-height:70dvh}
+  .lb-img img{width:100%;height:100%;max-height:70dvh;object-fit:contain}
+  .lb-info{padding:24px 22px 26px;display:flex;flex-direction:column;gap:12px;justify-content:center}
+  .lb-info h3{font-size:2rem;color:var(--burgundy);padding-right:36px}
+  .lb-info .price{font-size:1.2rem;margin:0}
+  .lb-info p{color:#5b3a44;font-weight:300}
+  .x{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(86,30,46,.25);background:rgba(251,243,232,.94);font-size:1.5rem;line-height:1;cursor:pointer;color:var(--burgundy)}
+  dialog{position:fixed}
+  /* Essayez le look */
+  .looks{background:#fff;padding:56px 0 60px;overflow:hidden}
+  .looks .section-head{margin-bottom:22px}
+  .looks-wrap{display:grid;gap:22px;align-items:start}
+  @media(min-width:900px){.looks-wrap{grid-template-columns:1.55fr 1fr;gap:34px;align-items:center}}
+  .stage{position:relative;min-width:0}
+  .track{--sw:min(64vw,270px);display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px calc(50% - var(--sw)/2) 34px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .track::-webkit-scrollbar{display:none}
+  @media(min-width:900px){.track{--sw:270px}}
+  .slide{position:relative;flex:0 0 var(--sw);scroll-snap-align:center;border-radius:16px;transition:transform .35s,opacity .35s,filter .35s;transform:scale(.88);opacity:.5;filter:saturate(.7)}
+  .slide.on{transform:none;opacity:1;filter:none}
+  .slide .ph{position:relative;aspect-ratio:4/5;border-radius:16px;overflow:hidden;background:#f1ebe4;box-shadow:0 18px 40px rgba(46,9,22,.16)}
+  .slide .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+  .slide .num{position:absolute;left:12px;top:10px;font:500 .72rem 'Poppins',sans-serif;letter-spacing:.18em;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.45)}
+  .pin{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;border:0;background:rgba(255,255,255,.95);box-shadow:0 4px 14px rgba(0,0,0,.35);cursor:pointer;display:grid;place-items:center;z-index:2}
+  .pin::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--burgundy)}
+  .pin::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(255,255,255,.85);animation:pulse 2s infinite}
+  @keyframes pulse{0%{transform:scale(.7);opacity:1}100%{transform:scale(1.5);opacity:0}}
+  .slide:not(.on) .pin{display:none}
+  .tip{position:absolute;left:50%;transform:translateX(-50%);bottom:12px;max-width:calc(100% - 20px);width:max-content;background:rgba(255,255,255,.97);border-radius:12px;padding:8px 12px;font-size:.8rem;line-height:1.3;color:var(--ink);box-shadow:0 8px 22px rgba(0,0,0,.25);z-index:3;display:none}
+  .tip b{display:block;font-weight:600;color:var(--burgundy)}
+  .tip.show{display:block}
+  .arrow{position:absolute;top:44%;z-index:4;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(86,30,46,.2);background:rgba(255,255,255,.95);color:var(--burgundy);font-size:1.3rem;cursor:pointer;display:none;box-shadow:0 6px 16px rgba(0,0,0,.14)}
+  .arrow.l{left:0}.arrow.r{right:0}
+  @media(min-width:900px){.arrow{display:block}}
+  .ticks{display:flex;justify-content:center;gap:6px;margin-top:6px}
+  .tick{border:0;background:none;cursor:pointer;padding:10px 4px 4px;min-width:44px;font:500 .72rem 'Poppins',sans-serif;letter-spacing:.12em;color:#b09aa0}
+  .tick::after{content:"";display:block;height:2px;margin-top:6px;background:#e4d9d6;transition:background .2s}
+  .tick.on{color:var(--burgundy)}
+  .tick.on::after{background:var(--burgundy)}
+  .panel{background:var(--cream);border-radius:var(--radius);padding:20px 18px 18px;border:1px solid rgba(212,162,76,.35)}
+  .panel h3{font-size:1.7rem;color:var(--burgundy);margin-bottom:2px}
+  .panel .sub{font-size:.8rem;color:#8a6a70;margin-bottom:12px}
+  .piece{display:grid;grid-template-columns:22px 52px 1fr;gap:10px;align-items:center;padding:9px 6px;border-radius:12px;border-bottom:1px solid rgba(212,162,76,.25);transition:background .3s}
+  .piece.flash{background:rgba(212,162,76,.25)}
+  .piece input{width:20px;height:20px;accent-color:var(--burgundy)}
+  .piece img{width:52px;height:66px;object-fit:cover;object-position:50% 20%;border-radius:8px;background:var(--blush)}
+  .piece b{display:block;font-weight:500;font-size:.88rem;line-height:1.25;color:var(--ink)}
+  .piece small{color:#8a6a70;font-size:.74rem}
+  .piece .pr{display:block;font-weight:600;color:var(--gold-dark);font-size:.88rem}
+  .total{display:flex;justify-content:space-between;align-items:baseline;margin:14px 4px 12px}
+  .total span{font-size:.82rem;color:#7a5a60}
+  .total strong{font:600 1.6rem 'Cormorant Garamond',serif;color:var(--burgundy)}
+  .panel .btn{width:100%}
+  .panel .fine{margin-top:10px;font-size:.74rem;color:#8a6a70;text-align:center}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.pin::after{animation:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 32 32"><path d="M16 3C8.800 3 3 8.800 3 16c0 2.300.6 4.500 1.700 6.400L3 29l6.800-1.800A13 13 0 0 0 16 29c7.200 0 13-5.800 13-13S23.200 3 16 3zm0 23.700c-2 0-3.900-.6-5.500-1.600l-.4-.2-4 1 1.100-3.900-.3-.4A10.700 10.700 0 1 1 16 26.700zm5.900-8c-.3-.2-1.900-.9-2.200-1s-.5-.2-.7.2l-1 1.200c-.2.200-.4.300-.7.100-1.900-.9-3.100-1.700-4.400-3.800-.3-.6.3-.5.9-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.400-.3.300-1.200 1.200-1.200 2.900s1.200 3.400 1.400 3.600c.2.200 2.400 3.700 5.800 5.200 2.200.9 3 1 4 .8.7-.1 1.900-.8 2.200-1.500.3-.7.3-1.400.2-1.500-.1-.2-.3-.3-.6-.4z"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M4 7a2 2 0 0 1 2-2h11v4"/><path d="M4 7v10a2 2 0 0 0 2 2h13a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H6a2 2 0 0 1-2-1z"/><circle cx="16" cy="14" r="1.200"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M12 20c-4 0-7-2-7-6v-3l3 1V6.500a1.500 1.500 0 0 1 3 0V10h.5V5a1.500 1.500 0 0 1 3 0v5h.5V6.500a1.500 1.500 0 0 1 3 0V14c0 3.500-2 6-6 6z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3z"/><path d="M14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="container nav">
+    <a href="#accueil" class="brand" aria-label="Baldé Élégance, accueil">
+      <img src="img/badge-96.png" alt="" width="46" height="46">
+      <span class="brand-text"><strong>BALDÉ</strong><span>Élégance</span></span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#looks">Looks</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#commander">Commander</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-gold" href="tel:+224626493140"><svg class="i"><use href="#i-phone"/></svg>Appeler</a>
+  </div>
+</header>
+
+<main id="accueil">
+<section class="hero" style="padding-block:46px 64px">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Tuniques · Robes · Foulards · Hijabs</p>
+      <h1>Chaque tenue raconte votre <em>élégance</em></h1>
+      <p class="lead">Choisissez votre article, puis écrivez-nous sur WhatsApp ou appelez-nous. Nous vous confirmons la taille et nous convenons ensemble de la remise, à Conakry.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="https://wa.me/224626493140?text=Bonjour%20Bald%C3%A9%20%C3%89l%C3%A9gance%2C%20je%20souhaite%20commander." target="_blank" rel="noopener"><svg class="wa-i"><use href="#i-wa"/></svg>Commander sur WhatsApp</a>
+        <a class="btn btn-line" href="#collection">Voir la collection</a>
+      </div>
+      <p class="hero-phone">Ou appelez-nous : <a href="tel:+224626493140">626 49 31 40</a></p>
+    </div>
+    <div class="hero-photos" aria-hidden="false">
+      <div class="hp-main"><img src="photos/robe-leopard.jpg" alt="Robe léopard évasée portée par une cliente" fetchpriority="high"></div>
+      <div class="hp-small"><img src="photos/tunique-rose.jpg" alt="Tunique rose à imprimé"></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container">
+    <ul>
+      <li><svg class="i"><use href="#i-wallet"/></svg><span><strong>Orange Money</strong> ou espèces à la remise</span></li>
+      <li><svg class="i"><use href="#i-hand"/></svg><span><strong>Remise en main propre</strong> à Conakry</span></li>
+      <li><svg class="i"><use href="#i-chat"/></svg><span><strong>On vous répond</strong> sur WhatsApp et au téléphone</span></li>
+      <li><svg class="i"><use href="#i-truck"/></svg><span><strong>Livraison possible</strong>, frais à votre charge</span></li>
+    </ul>
+  </div>
+</div>
+
+<section class="looks" id="looks" aria-label="Essayez le look">
+  <div class="container">
+    <div class="section-head">
+      <h2>Essayez le look.</h2>
+      <p>Faites glisser pour voir chaque tenue. Touchez le repère pour découvrir la pièce, puis composez votre look.</p>
+      <div class="divider">✦</div>
+    </div>
+    <div class="looks-wrap">
+      <div class="stage">
+        <button class="arrow l" id="lkPrev" type="button" aria-label="Look précédent">&#8249;</button>
+        <button class="arrow r" id="lkNext" type="button" aria-label="Look suivant">&#8250;</button>
+        <div class="track" id="lkTrack" tabindex="0" aria-label="Carrousel de looks"></div>
+        <div class="ticks" id="lkTicks"></div>
+      </div>
+      <aside class="panel" id="lkPanel" aria-live="polite"></aside>
+    </div>
+  </div>
+</section>
+
+<section id="categories" style="padding-bottom:20px">
+  <div class="container">
+    <div class="section-head"><h2>Que cherchez-vous ?</h2><div class="divider">✦</div></div>
+    <div class="cats" id="cats"></div>
+  </div>
+</section>
+
+<section id="collection">
+  <div class="container">
+    <div class="section-head">
+      <h2>La collection</h2>
+      <p>Touchez une photo pour l'agrandir. Un message WhatsApp est déjà prêt pour chaque article.</p>
+      <div class="divider">✦</div>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Catégories"></div>
+    <div class="grid" id="grid"></div>
+    <p class="note">Tailles et couleurs disponibles : demandez-nous sur WhatsApp, nous vous répondons article par article.</p>
+  </div>
+</section>
+
+<section class="how" id="commander">
+  <div class="container">
+    <div class="section-head">
+      <h2>Comment ça se passe</h2>
+      <p>Pas de compte à créer, pas de formulaire.</p>
+      <div class="divider">✦</div>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Vous choisissez</h3><p>Parcourez la collection et repérez l'article qui vous plaît.</p></div>
+      <div class="step"><div class="n">2</div><h3>On en parle</h3><p>Écrivez-nous sur WhatsApp ou appelez. Nous confirmons la taille et la disponibilité, et nous convenons de la remise.</p></div>
+      <div class="step"><div class="n">3</div><h3>Vous payez, vous recevez</h3><p>Par Orange Money ou en espèces à la remise. Si vous préférez être livrée, les frais de livraison sont à votre charge.</p></div>
+    </div>
+    <div class="pay">
+      <span>Orange Money</span><span>Espèces à la remise</span><span>Livraison à votre charge</span>
+    </div>
+  </div>
+</section>
+
+<section id="apropos">
+  <div class="container about" id="about">
+    <div class="about-photo"><img id="aboutImg" src="photos/djeneba.jpg" alt="Djeneba Baldé" loading="lazy"></div>
+    <div class="about-text">
+      <h2>Qui est derrière la boutique</h2>
+      <p>Bonjour, je m'appelle Djeneba Baldé. Je vends des tuniques, des robes longues, des foulards, des turbans et des hijabs à Conakry.</p>
+      <p>Je vends depuis chez moi : c'est pour cela que nous convenons ensemble du lieu de remise, ou d'une livraison si vous préférez.</p>
+      <p>Vous hésitez sur une taille ou une couleur ? Appelez-moi ou écrivez-moi sur WhatsApp, je vous aide à choisir.</p>
+      <p class="sign">Djeneba</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-box">
+      <h2>Une question ? <span style="white-space:nowrap">Parlons-en.</span></h2>
+      <p>Appelez-nous ou écrivez-nous.</p>
+      <div class="phone">626 49 31 40</div>
+      <p>Conakry, Guinée</p>
+      <div class="contact-cta">
+        <a class="btn btn-burgundy" href="tel:+224626493140"><svg class="i"><use href="#i-phone"/></svg>Appeler</a>
+        <a class="btn btn-wa" href="https://wa.me/224626493140?text=Bonjour%20Bald%C3%A9%20%C3%89l%C3%A9gance%2C%20j%27ai%20une%20question." target="_blank" rel="noopener"><svg class="wa-i"><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="brand-line"><img src="img/badge-96.png" alt="" width="44" height="44" loading="lazy"><strong>BALDÉ ÉLÉGANCE</strong></div>
+    <span class="gold">Chaque tenue raconte votre élégance</span>
+    © <span id="year"></span> Baldé Élégance · Conakry, Guinée
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn btn-burgundy btn-call" href="tel:+224626493140"><svg class="i"><use href="#i-phone"/></svg>Appeler</a>
+  <a class="btn btn-wa" href="https://wa.me/224626493140?text=Bonjour%20Bald%C3%A9%20%C3%89l%C3%A9gance%2C%20j%27ai%20une%20question." target="_blank" rel="noopener"><svg class="wa-i"><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
+<dialog id="dlg" aria-label="Détail de l'article"></dialog>
+
+<script>
+  /* ============================================================
+     PRODUITS : c'est la seule partie à modifier pour ajouter ou
+     changer un article. Une ligne = un article.
+       cat   : tunique | robe | foulard | hijab   (« robe » regroupe robes et ensembles)
+       photo : nom du fichier dans le dossier "photos"
+       dispo : true (disponible) ou false (vendu)
+     Les photos et prix ci-dessous sont des EXEMPLES à remplacer
+     par les vraies photos et les vrais prix de Djeneba.
+     ============================================================ */
+  const NUMERO = "224626493140";
+  const CATEGORIES = [
+    { id:"tunique",  nom:"Tuniques",         photo:"tunique-rose.jpg" },
+    { id:"robe",     nom:"Robes et ensembles", photo:"robe-marron.jpg" },
+    { id:"foulard",  nom:"Foulards et voiles", photo:"hijab-dentelle-rose.jpg" },
+    { id:"hijab",    nom:"Hijabs",           photo:"hijab-prune.jpg" }
+  ];
+  const PRODUITS = [
+    { nom:"Tunique rose à imprimé",            cat:"tunique",  prix:250000, photo:"tunique-rose.jpg",  dispo:true, desc:"Tunique longue à fleurs roses et ivoire, col chemise, manches longues, avec un détail brillant sur le devant." },
+    { nom:"Robe longue marron avec ceinture",  cat:"robe",     prix:250000, photo:"robe-marron.jpg",   dispo:true, desc:"Robe longue à imprimé brun et caramel, ceinture à nouer, manches bouffantes et bas à volants." },
+    { nom:"Robe léopard évasée",               cat:"robe",     prix:250000, photo:"robe-leopard.jpg",  dispo:true, desc:"Robe mi-longue évasée à motif léopard, col à nouer, manches longues. La taille est marquée." },
+    { nom:"Tunique beige et noire",            cat:"tunique",  prix:250000, photo:"tunique-beige.jpg", dispo:true, desc:"Tunique ample à motifs beige sur fond noir, manches longues. Facile à porter toute la journée." },
+    { nom:"Tunique bleu-gris",                 cat:"tunique",  prix:250000, photo:"tunique-bleu.jpg",  dispo:true, desc:"Tunique longue bleu-gris à motifs fondus, col chemise. Légère, agréable quand il fait chaud." },
+    { nom:"Robe longue blanche avec ceinture", cat:"robe",     prix:250000, photo:"robe-blanche.jpg",  dispo:true, desc:"Robe longue légère à rayures noires et touches caramel, ceinture à nouer, bas à volants." },
+    { nom:"Ensemble camel chemise et pantalon",cat:"robe",     prix:280000, photo:"ensemble-beige.jpg",dispo:true, desc:"Deux pièces couleur camel : une chemise aux manches retroussées et un pantalon large." },
+    { nom:"Voile rose poudré en dentelle",     cat:"foulard",  prix:55000,  photo:"hijab-dentelle-rose.jpg", dispo:true, desc:"Grand voile rose poudré, bordé de dentelle brodée et de fines chaînettes." },
+    { nom:"Voile gris en dentelle",            cat:"foulard",  prix:55000,  photo:"hijab-dentelle-gris.jpg", dispo:true, desc:"Grand voile gris, bordé de dentelle noire. Léger et agréable à porter." },
+    { nom:"Hijab prune à strass",              cat:"hijab",    prix:60000,  photo:"hijab-prune.jpg",   dispo:true, desc:"Hijab prêt à enfiler, couleur prune, avec des strass et des perles qui brillent sur toute la longueur." },
+    { nom:"Hijab bordeaux avec collier perlé", cat:"hijab",    prix:60000,  photo:"hijab-bordeaux.jpg",dispo:true, desc:"Hijab prêt à enfiler, bordeaux, avec un petit collier de perles et des motifs brillants. Tissu souple." },
+    { nom:"Hijab beige rosé à strass",         cat:"hijab",    prix:60000,  photo:"hijab-beige.jpg",   dispo:true, desc:"Hijab beige rosé décoré de losanges brillants. Il s'enfile en une seconde." },
+    { nom:"Hijab brique à chaînettes",         cat:"hijab",    prix:65000,  photo:"hijab-brique.jpg",  dispo:true, desc:"Hijab couleur brique en mousseline, avec des chaînettes et des petits pendentifs perlés sur le bord." },
+    { nom:"Hijab mauve à col brillant",        cat:"hijab",    prix:55000,  photo:"hijab-mauve.jpg",   dispo:true, desc:"Hijab mauve à col, avec des strass qui scintillent dans le bas." }
+  ];
+
+  const $ = (s, r=document) => r.querySelector(s);
+  const money = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " GNF";
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const waLink = (p, ask) => "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(
+    "Bonjour Baldé Élégance, je suis intéressée par : " + p.nom + " (" + money(p.prix) + "). " + (ask || "Est-il disponible ? Quelles tailles avez-vous ?"));
+  const WA_ICON = '<svg class="wa-i"><use href="#i-wa"/></svg>';
+
+  const grid = $('#grid'), filters = $('#filters'), dlg = $('#dlg');
+  let courant = "all";
+
+  function carte(p, i){
+    return '<article class="card"><button class="photo" type="button" data-i="' + i + '" aria-label="Agrandir : ' + esc(p.nom) + '">' +
+      '<img src="photos/' + esc(p.photo) + '" alt="' + esc(p.nom) + '" loading="lazy" width="360" height="480"></button>' +
+      '<div class="info"><h3>' + esc(p.nom) + '</h3><span class="price">' + money(p.prix) + '</span>' +
+      (p.dispo
+        ? '<a class="btn btn-wa" target="_blank" rel="noopener" href="' + waLink(p) + '">' + WA_ICON + 'Commander</a>'
+        : '<a class="btn btn-line" style="color:var(--burgundy)" target="_blank" rel="noopener" href="' + waLink(p, "Avez-vous un article similaire ?") + '">Article vendu : similaire ?</a>') +
+      '</div></article>';
+  }
+
+  function afficher(cat){
+    courant = cat;
+    const liste = PRODUITS.map((p, i) => [p, i]).filter(([p]) => cat === "all" || p.cat === cat);
+    grid.innerHTML = liste.map(([p, i]) => carte(p, i)).join('');
+    filters.querySelectorAll('.chip').forEach(c => c.classList.toggle('active', c.dataset.f === cat));
+  }
+
+  filters.innerHTML = '<button class="chip active" data-f="all">Tout</button>' +
+    CATEGORIES.map(c => '<button class="chip" data-f="' + c.id + '">' + esc(c.nom) + '</button>').join('');
+  filters.addEventListener('click', e => { const b = e.target.closest('.chip'); if (b) afficher(b.dataset.f); });
+
+  $('#cats').innerHTML = CATEGORIES.map(c =>
+    '<button class="cat" type="button" data-f="' + c.id + '"><img src="photos/' + esc(c.photo) + '" alt="" loading="lazy"><span>' + esc(c.nom) + '</span></button>').join('');
+  $('#cats').addEventListener('click', e => {
+    const b = e.target.closest('.cat'); if (!b) return;
+    afficher(b.dataset.f);
+    $('#collection').scrollIntoView({behavior:'smooth'});
+  });
+
+  grid.addEventListener('click', e => {
+    const b = e.target.closest('.photo'); if (!b) return;
+    const p = PRODUITS[Number(b.dataset.i)];
+    dlg.innerHTML = '<button class="x" type="button" aria-label="Fermer">&times;</button><div class="lb">' +
+      '<div class="lb-img"><img src="photos/' + esc(p.photo) + '" alt="' + esc(p.nom) + '"></div>' +
+      '<div class="lb-info"><h3>' + esc(p.nom) + '</h3><span class="price">' + money(p.prix) + '</span><p>' + esc(p.desc) + '</p>' +
+      '<a class="btn btn-wa" target="_blank" rel="noopener" href="' + waLink(p) + '">' + WA_ICON + 'Commander sur WhatsApp</a>' +
+      '<a class="btn btn-burgundy" href="tel:+224626493140">Appeler le 626 49 31 40</a></div></div>';
+    dlg.showModal();
+  });
+  dlg.addEventListener('click', e => { if (e.target === dlg || e.target.closest('.x')) dlg.close(); });
+
+  // La photo de Djeneba : si le fichier photos/djeneba.jpg existe, elle s'affiche à côté du texte.
+  const ab = $('#aboutImg');
+  const ok = () => $('#about').classList.add('has-photo');
+  if (ab.complete && ab.naturalWidth) ok(); else { ab.addEventListener('load', ok); ab.addEventListener('error', () => ab.closest('.about-photo').remove()); }
+
+  /* ============================================================
+     LOOKS : « porte » = l'article visible sur la photo,
+             « avec » = les articles à assortir (noms de fichiers du tableau PRODUITS),
+             « pin » = position du repère sur la photo [x %, y %].
+     ============================================================ */
+  const LOOKS = [
+    { porte:"robe-leopard.jpg", avec:["hijab-brique.jpg"],           pin:[50,62] },
+    { porte:"robe-marron.jpg",  avec:["hijab-bordeaux.jpg"],         pin:[50,64] },
+    { porte:"tunique-rose.jpg", avec:["hijab-dentelle-rose.jpg"],    pin:[44,66] },
+    { porte:"tunique-bleu.jpg", avec:["hijab-dentelle-gris.jpg"],    pin:[45,62] },
+    { porte:"ensemble-beige.jpg", avec:["hijab-beige.jpg"],          pin:[48,58] },
+    { porte:"robe-blanche.jpg", avec:["hijab-mauve.jpg"],            pin:[50,66] }
+  ].map(l => ({ pieces: [l.porte].concat(l.avec).map(f => PRODUITS.find(p => p.photo === f)).filter(Boolean), pin:l.pin }));
+
+  const lkTrack = $('#lkTrack'), lkTicks = $('#lkTicks'), lkPanel = $('#lkPanel');
+  const lkSel = LOOKS.map(l => l.pieces.map(() => true));
+  let lkOn = -1;
+
+  lkTrack.innerHTML = LOOKS.map((l, i) => {
+    const p = l.pieces[0];
+    return '<div class="slide" data-i="' + i + '"><div class="ph"><img src="photos/' + esc(p.photo) + '" alt="' + esc(p.nom) + ' portée par une cliente" ' + (i < 2 ? '' : 'loading="lazy" ') + 'width="360" height="450">' +
+      '<span class="num">LOOK ' + String(i + 1).padStart(2, '0') + '</span>' +
+      '<button class="pin" type="button" style="left:' + l.pin[0] + '%;top:' + l.pin[1] + '%" aria-label="Voir la pièce : ' + esc(p.nom) + '"></button>' +
+      '<div class="tip"><b>' + esc(p.nom) + '</b>' + money(p.prix) + '</div></div></div>';
+  }).join('');
+  lkTicks.innerHTML = LOOKS.map((l, i) => '<button class="tick" type="button" data-i="' + i + '" aria-label="Look ' + (i + 1) + '">' + String(i + 1).padStart(2, '0') + '</button>').join('');
+
+  function lkRender(i){
+    const l = LOOKS[i], sel = lkSel[i];
+    const total = l.pieces.reduce((s, p, k) => s + (sel[k] ? p.prix : 0), 0);
+    lkPanel.innerHTML = '<h3>Dans ce look</h3><p class="sub">' + l.pieces.length + ' pièces · cochez celles que vous voulez</p>' +
+      l.pieces.map((p, k) => '<label class="piece" data-k="' + k + '"><input type="checkbox" data-k="' + k + '"' + (sel[k] ? ' checked' : '') + '>' +
+        '<img src="photos/' + esc(p.photo) + '" alt="" width="52" height="66"><span><b>' + esc(p.nom) + '</b><small>' + (k === 0 ? 'Portée sur la photo' : 'À assortir') + '</small><span class="pr">' + money(p.prix) + '</span></span></label>').join('') +
+      '<div class="total"><span>Compléter le look</span><strong>' + money(total) + '</strong></div>' +
+      '<a class="btn btn-wa" id="lkWa" target="_blank" rel="noopener" href="' + lkLink(i) + '"' + (total ? '' : ' aria-disabled="true"') + '>' + WA_ICON + 'Commander ce look</a>' +
+      '<p class="fine">Tailles et couleurs : nous confirmons sur WhatsApp.</p>';
+  }
+  function lkLink(i){
+    const l = LOOKS[i], lignes = l.pieces.filter((p, k) => lkSel[i][k]);
+    const total = lignes.reduce((s, p) => s + p.prix, 0);
+    const msg = "Bonjour Baldé Élégance, je voudrais ce look (Look " + (i + 1) + ") :\n" + lignes.map(p => "- " + p.nom + " (" + money(p.prix) + ")").join("\n") +
+      "\nTotal : " + money(total) + ".\nEst-ce disponible ? Quelles tailles avez-vous ?";
+    return "https://wa.me/" + NUMERO + "?text=" + encodeURIComponent(msg);
+  }
+  function lkSet(i){
+    if (i === lkOn) return;
+    lkOn = i;
+    lkTrack.querySelectorAll('.slide').forEach((s, k) => s.classList.toggle('on', k === i));
+    lkTicks.querySelectorAll('.tick').forEach((t, k) => t.classList.toggle('on', k === i));
+    lkTrack.querySelectorAll('.tip').forEach(t => t.classList.remove('show'));
+    lkRender(i);
+  }
+  function lkGo(i){
+    i = Math.max(0, Math.min(LOOKS.length - 1, i));
+    const s = lkTrack.children[i];
+    lkTrack.scrollTo({ left: s.offsetLeft - (lkTrack.clientWidth - s.offsetWidth) / 2, behavior: 'smooth' });
+    lkSet(i);
+  }
+  let lkRaf = 0;
+  lkTrack.addEventListener('scroll', () => {
+    cancelAnimationFrame(lkRaf);
+    lkRaf = requestAnimationFrame(() => {
+      const mid = lkTrack.scrollLeft + lkTrack.clientWidth / 2;
+      let best = 0, d = 1e9;
+      [...lkTrack.children].forEach((s, k) => { const x = Math.abs(s.offsetLeft + s.offsetWidth / 2 - mid); if (x < d) { d = x; best = k; } });
+      lkSet(best);
+    });
+  }, { passive: true });
+  lkTrack.addEventListener('click', e => {
+    const slide = e.target.closest('.slide'); if (!slide) return;
+    const i = Number(slide.dataset.i);
+    if (i !== lkOn) { lkGo(i); return; }
+    if (e.target.closest('.pin')) {
+      slide.querySelector('.tip').classList.toggle('show');
+      const row = lkPanel.querySelector('.piece[data-k="0"]');
+      if (row) { row.classList.add('flash'); setTimeout(() => row.classList.remove('flash'), 900); }
+    }
+  });
+  lkTrack.addEventListener('keydown', e => { if (e.key === 'ArrowRight') { e.preventDefault(); lkGo(lkOn + 1); } if (e.key === 'ArrowLeft') { e.preventDefault(); lkGo(lkOn - 1); } });
+  lkTicks.addEventListener('click', e => { const b = e.target.closest('.tick'); if (b) lkGo(Number(b.dataset.i)); });
+  $('#lkPrev').addEventListener('click', () => lkGo(lkOn - 1));
+  $('#lkNext').addEventListener('click', () => lkGo(lkOn + 1));
+  lkPanel.addEventListener('change', e => { const c = e.target.closest('input[type=checkbox]'); if (!c) return; lkSel[lkOn][Number(c.dataset.k)] = c.checked; lkRender(lkOn); });
+  lkPanel.addEventListener('click', e => { const a = e.target.closest('#lkWa'); if (a && a.getAttribute('aria-disabled')) e.preventDefault(); });
+  lkSet(0);
+
+  $('#year').textContent = new Date().getFullYear();
+  afficher("all");
+</script>
+</body>
+</html>
